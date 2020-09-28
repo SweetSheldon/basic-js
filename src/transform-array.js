@@ -15,13 +15,10 @@ module.exports = function transform(array) {
       j++;}
       else{continue}}
     else if(array[i]=='--double-next'&&i!=(array.length-1)){
-
       result[j]=array[i+1];
       j++;}
     else if(array[i]=='--discard-next'&&i!=(array.length-1)){
-
-      result[j]=array[i+2];
-      i++;j++;}
+      i++;}
     else if(array[i]=='--discard-prev'&&i==0){continue}
     else if(array[i]=='--double-prev'&&i==0){continue}
     else if(array[i]=='--double-next'&&i>=array.length-1){break}
